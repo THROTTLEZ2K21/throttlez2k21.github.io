@@ -170,7 +170,7 @@
                 </div>
                 <div class="col-sm-2 form-group">
                     <label for="btn"></label>
-                    <a id="paymentanchor"  onclick="foo();" href="" class="btn btn-primary py-2 px-4 text-white"><span>Pay ₹100</span></a>
+                    <a id="paymentanchor"  href="upi://pay?pn=UPAYI&pa=Pgokul253@ybl&cu=INR&am=100.0"+getPayerName" class="btn btn-primary py-2 px-4 text-white"><span>Pay ₹100</span></a>
                     <!-- <button class="btn btn-primary float-right">Submit</button> -->
                 </div>
                 <div class="col-sm-4 form-group">
@@ -216,14 +216,7 @@
             })
 
         </script>
-        <script>
-            function foo(){
-                 getPayerName = document.getElementById("name").value;
-                 document.getElementById("paymentanchor").href = "upi://pay?pn=UPAYI&pa=Pgokul253@ybl&cu=INR&am=100.0?tn="+getPayerName;
 
-            }
-
-        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
