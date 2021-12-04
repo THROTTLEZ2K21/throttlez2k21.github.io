@@ -324,14 +324,14 @@ body {
     color: #a4a4a4;
 }
 .member-name {
-    font-size: 1.2em;
+    font-size: 0.8em;
     color: #a4a4a4;
     text-transform: uppercase;
 }
 .member-post {
     color: #cd2929;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 .container {
     text-align: center;
