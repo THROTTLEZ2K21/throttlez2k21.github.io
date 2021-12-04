@@ -11,6 +11,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="theme-color" content="#333333">
         <meta name="mobile-web-app-capable" content="yes">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -56,24 +57,46 @@
         </style>
     </head>
     <body>
-         <!-- Modal HTML -->
+         <!-- Modal registered successfully -->
         <div id="myModal" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Welcome to Throttlez 2021</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <a><button type="button" class="close" data-dismiss="modal">&times;</button></a>
                     </div>
                     <div class="modal-body">
                         <p>Congratulations ! You're successfully registered.</p>
                     </div>
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        <a href="index.html"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!----QR model--->
+        <div id="qrmodal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">You can Pay via Any UPI App. (GPay, PhonePay, Paytm,etc..)</h5>
+                        <a><button type="button" class="close" data-dismiss="modal">&times;</button></a>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/qrcode.png" alt="qrcode" height="80%" width="80%">
+                    </div>
+                    <div class="modal-footer">
+
+                        <a ><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modal ends here--->
 
         <div class="reg-title">
             <a href="index.html"><img src="img/plogo2k15.png" alt="Throttlez-logo" height=70%/></a>
@@ -150,6 +173,21 @@
                     <div><input type="checkbox" name="nontechEvent[]" class="nontech-checkbox" id="mobphoto" value="MobilePhotography"> <label for="mobphoto">Mobile Photography</label></div>
                     <div><input type="checkbox" name="nontechEvent[]" class="nontech-checkbox" id="game" value="GamingZone"> <label for="game">Gaming Zone</label></div>
                     <div><input type="checkbox" name="nontechEvent[]" class="nontech-checkbox" id="conn" value="Connexion"> <label for="conn">C O N N E X I O N</label></div>
+                    <br>
+                    <label for="cod">Workshops</label><br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="Workshop" class="custom-control-input" value="None" checked>
+                        <label class="custom-control-label" for="customRadioInline1">None</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="Workshop" class="custom-control-input" value="3D Printing">
+                        <label class="custom-control-label" for="customRadioInline2">3D Printing (₹ 150)</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="Workshop" class="custom-control-input" value="Auto-Tronics">
+                        <label class="custom-control-label" for="customRadioInline3">Auto-Tronics (₹ 500)</label>
+                    </div>
+
                 </div>
                 <input type="hidden" id="event" name="Event" value="">
 
@@ -162,30 +200,35 @@
                                 (A team should have between 2 and 4 members)</li>
                              <li>Food and Transport Facility will be arranged.</li>
                              <li>Each Participant is allowed to participate upto 2 Events in each category.<br>(Technical - 2 , Non Technical - 2)</li>
+                             <li>One Participant can only attend one Workshop.</li>
+                             <li>Certificates will be provided.</li>
                              <li>Decision of the judges will be final and binding.</li>
                              <li>On spot registration is available.</li>
                            </ul>
                           </p>
                       </div>
                 </div>
-                <div class="col-sm-2 form-group">
+
+                <div class="col-sm-3 form-group">
                     <label for="btn"></label>
-                    <a id="paymentanchor"  href="upi://pay?pn=UPAYI&pa=Pgokul253@ybl&cu=INR&am=100.0"+getPayerName" class="btn btn-primary py-2 px-4 text-white"><span>Pay ₹100</span></a>
-                    <!-- <button class="btn btn-primary float-right">Submit</button> -->
+                    <a id="paymentanchor"  href="upi://pay?pn=UPAYI&pa=Pgokul253@ybl&cu=INR&am=100.0" class="btn btn-primary py-2 px-4 text-white"><span>Pay ₹100</span></a>
+                    <a class="btn btn-primary py-2 text-white" data-toggle="modal" data-target="#qrmodal"><i class="fa fa-qrcode" aria-hidden="true"></i></a>
+
                 </div>
+
                 <div class="col-sm-4 form-group">
                     <input type="number" name="TransactionID" class="form-control" id="tractId" placeholder="Enter TransactionID or Ref No" >
 
                 </div>
 
                 <div class="col-sm-12">
-                    <input type="checkbox" name="Rules" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
+                    <input type="checkbox" name="Rules" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I read all rules and instructions.
                     </label>
                 </div>
 
                 <div class="col-sm-12 form-group mb-0">
 
-                   <input type="submit"  id="regBtn" name="submit" value="Register" class="btn btn-primary mb-2 float-right py-2 px-4 text-white">
+                   <input type="submit"  id="regBtn" name="submit" value="Register" class="btn btn-primary mb-2 float-right py-2 px-4 text-white" data-toggle="modal">
                 </div>
 
             </div>
@@ -197,7 +240,7 @@
         <script>
 
 
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzUaLK7P4LkJcJHxdvSaFG9ayC3ZXqwXNuxOzcy6rzNWfcpX6nt8O_pTEV_3UQcTdyaxw/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ34mi61Ye5yr8z4qNITyy_3GenRYMoir9vLdEFFBYPlBG8whuRzRxXDW0ZoGKSZxdQA/exec'
             const form = document.forms['google-sheet']
 
             form.addEventListener('submit', e => {

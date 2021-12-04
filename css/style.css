@@ -402,7 +402,7 @@ body {
     background: #fff url("../img/nine.png") no-repeat;
 }
 .event-5 > .event-image {
-    background: #fff url("../img/3drago.png") no-repeat;
+    background: #fff url("../img/golem.png") no-repeat;
 }
 .event-6 > .event-image {
     background: #fff url("../img/zorro.png") no-repeat;
@@ -423,19 +423,10 @@ body {
     background: #fff url("../img/jacksparrow.png") no-repeat;
 }
 .event-12 > .event-image {
-    background: #fff url("../img/golem.png") no-repeat;
-}
-.event-13 > .event-image {
     background: #fff url("../img/botno.png") no-repeat;
 }
-.event-14 > .event-image {
-    background: #fff url("../img/eddard.png") no-repeat;
-}
-.event-15 > .event-image {
-    background: #fff url("../img/jacksparrow.png") no-repeat;
-}
-.event-16 > .event-image {
-    background: #fff url("../img/zorro.png") no-repeat;
+.event-13 > .event-image {
+    background: #fff url("../img/itachi.jpg") no-repeat;
 }
 
 .event-image {
