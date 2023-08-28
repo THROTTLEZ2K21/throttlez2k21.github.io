@@ -1,962 +1,371 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-        <title>ayushpragya | 2K23</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="theme-color" content="#333333">
-        <meta name="mobile-web-app-capable" content="yes">
 
-        <link rel="apple-touch-icon" href="img/plogo2k15.png">
-        <link rel="shortcut icon" href="img/plogo2k15.png" type="image/x-icon" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-        <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <title>ayushpragya | 2K23</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#333333">
+  <meta name="mobile-web-app-capable" content="yes">
 
-        <style media="screen">
-          html, body{
-            overflow-y: hidden;
-          }
-          #loading-screen{
-            background-color: #cd2929;
-            float: left;
-            position: absolute;
-            z-index: 25;
-          }
-          .loader-box{
-            width: 500px;
-            height: auto;
-            margin: auto auto;
-            position:absolute;
-             left:50%;
-             top:50%;
-             margin-left:-200px;
-             margin-top:-50px;
-             box-sizing: border-box;
-          }
-          .loader-message{
-            float: right;
-            height: 75px;
-            margin-top: -50px;
-            box-sizing: border-box;
-            text-align: left;
-            width: 80%;
-            color: #fff;
-            font-family: Helvetica, Arial, sans-serif;
-            font-variant: small-caps;
-            font-size: 24px;
-          }
-          .loading {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: solid 10px rgba(255, 255, 255, 0.2);
-            border-top-color: #FFF;
-            animation: spin 1s infinite linear;
-          }
-          @keyframes spin {
-            100% {
-              transform: rotate(360deg);
-            }
-          }
-          @media only screen and (min-width: 320px) and (max-width:549px){
-              .loader-box{margin-left: -240px;}
-              .loading{position: relative; bottom: 80px;
-              left:40%;}
-          }
-        </style>
-<!-- <<<<<<< HEAD -->
+  <link rel="apple-touch-icon" href="img/plogo2k15.png">
+  <link rel="shortcut icon" href="img/plogo2k15.png" type="image/x-icon" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- <link rel="stylesheet" href="css/skeleton.css" /> -->
-        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Place favicon.ico in the root directory -->
+  <style media="screen">
+    html,
+    body {
+      overflow-y: hidden;
+    }
 
-<!-- ======= -->
-<!-- >>>>>>> origin/master -->
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    #loading-screen {
+      background-color: #cd2929;
+      float: left;
+      position: absolute;
+      z-index: 25;
+    }
 
-        <!-- Add your site or application content here -->
-        <div id="loading-screen">
-          <div class="loader-box"><div class="loading"></div><div class="loader-message">Welcome The Ayushpragya. . .</div></div>
-        </div>
+    .loader-box {
+      width: 500px;
+      height: auto;
+      margin: auto auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -200px;
+      margin-top: -50px;
+      box-sizing: border-box;
+    }
 
-        <script type="text/javascript">
-          window.onbeforeunload = function(){
-            window.scrollTo(0,0);
-          }
-          var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-          var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-          document.getElementById('loading-screen').setAttribute("style","width:100%; height:100%;");
-          document.getElementById('loading-screen').style.width='100%';
-          document.getElementById('loading-screen').style.height='100%';
-        </script>
+    .loader-message {
+      float: right;
+      height: 75px;
+      margin-top: -50px;
+      box-sizing: border-box;
+      text-align: left;
+      width: 80%;
+      color: #fff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-variant: small-caps;
+      font-size: 24px;
+    }
 
-        <div class="scroll-down"><img src="img/scroll-down.png" alt="scroll down" width="100%"/></div>
+    .loading {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: solid 10px rgba(255, 255, 255, 0.2);
+      border-top-color: #FFF;
+      animation: spin 1s infinite linear;
+    }
 
-        <header class="top-bar ">
-          <div class="wrap960">
-            <div class="logo-box"><div class="logo"><a href="index.html"><p>Throttlez</p></a></div></div>
-            <div class="menu-button"> </div>
-            <div class="nav-box">
-              <ul class="nav">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <!-- <li><a href="#Team">Team</a></li> -->
-                <li><a href="#Events">Events</a></li>
-                <li><a href="#Register">Register</a></li>
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-              </ul>
+    @media only screen and (min-width: 320px) and (max-width:549px) {
+      .loader-box {
+        margin-left: -240px;
+      }
+
+      .loading {
+        position: relative;
+        bottom: 80px;
+        left: 40%;
+      }
+    }
+  </style>
+  <!-- <<<<<<< HEAD -->
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/skeleton.css" /> -->
+  <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+
+  <!-- ======= -->
+  <!-- >>>>>>> origin/master -->
+</head>
+
+<body>
+
+  <!-- Un-comment later for loader -->
+  <div id="loading-screen">
+    <div class="loader-box">
+      <div class="loading"></div>
+      <div class="loader-message">Welcome The Ayushpragya. . .</div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    document.getElementById('loading-screen').setAttribute("style", "width:100%; height:100%;");
+    document.getElementById('loading-screen').style.width = '100%';
+    document.getElementById('loading-screen').style.height = '100%';
+  </script>
+
+  <div class="scroll-down"><img src="img/scroll-down.png" alt="scroll down" width="100%" /></div>
+
+  <!-- Top NavBar -->
+  <header class="top-bar z-40">
+    <div class="wrap960">
+      <div class="logo-box">
+        <div class="logo"><a href="index.html">
+            <p>Throttlez</p>
+          </a></div>
+      </div>
+      <div class="menu-button"> </div>
+      <div class="nav-box">
+        <ul class="nav">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <!-- <li><a href="#Team">Team</a></li> -->
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#Register">Register</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <div name="Home" class="home-slide">
+    <div class="overlay-pattern">
+      <div class="para-slide">
+        <div class="pre-para invisible">Hi All</div>
+        <div class="para">ayushpragya</div>
+        <div class="post-para">2K23</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div name="About" class="about-container">
+    <div class="section-title">About<p>&diams;&nbsp;&diams;&nbsp;&diams;</p>
+    </div>
+    <div class="about-para">
+      <p><span>ayushpragya</span> the National Socio-Annual Cultural fastival of Faculty of Ayurveda, IMS BHU, Varanasi
+        is an extravagant mega fest and artistic events. host wide array of event such as story telling, fashion show,
+        beat boxing, musical jam sessions and other disparate contests. Its grandeur has earned it the fame of India's
+        biggest culturalfestival of Ayurveda. It is a 3-4 days fiesta which started in 2008 by the inspiration of Pandit
+        Madan Mohan Malviya to inculcate enthusiasm, exultation and zeal among youngsters and held every year in BHU in
+        the holy and eternal city Varanasi
+      </p>
+    </div>
+
+    <div class="main-logo-container">
+      <div class="main-logo">
+        <img src="img/plogo2k15.png" width="100%" />
+      </div>
+    </div>
+    <div class="para-detail-container">
+      <div class="num-event">
+        <span>27</span><br>events
+      </div>
+      <div class="event-date">
+        <span>OCT 31</span><br>event date
+      </div>
+      <div class="cash-prize">
+        <span>NOV 3</span><br>event end
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Events Section -->
+  <div name="Events" class="event-container">
+    <div class="container">
+      <div class="section-title ">Events<p>&diams;&nbsp;&diams;&nbsp;&diams;</p><br></div>
+
+      <div class="flex justify-center">
+        <div id="indicators-carousel" class="relative w-1/2 h-[80%] " data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-full overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+              <img src="./img/day1.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 border-2 border-rose-900"
+                alt="day-1-img">
             </div>
-          </div>
-        </header>
-
-        <div name="Home" class="home-slide">
-          <div class="overlay-pattern">
-            <div class="para-slide">
-              <div class="pre-para invisible">Hi All</div>
-                <div class="para">ayushpragya</div>  
-                <div class="post-para">2K23</div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/day2.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-2-img">
             </div>
-          </div>
-        </div>
-
-        <div name="About" class="about-container" >
-          <div class="section-title">About<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
-          <div class="about-para">
-                <p><span>ayushpragya</span> the National Socio-Annual Cultural fastival of Faculty of Ayurveda, IMS BHU, Varanasi is an extravagant mega fest and artistic events. host wide array of event such as story telling, fashion show, beat boxing, musical jam sessions and other disparate contests. Its grandeur has earned it the fame of India's biggest culturalfestival of Ayurveda. It is a 3-4 days fiesta which started in 2008 by the inspiration of Pandit Madan Mohan Malviya to inculcate enthusiasm, exultation and zeal among youngsters and held every year in BHU in the holy and eternal city Varanasi
-                  </p>
-          </div>
-
-          <div class="main-logo-container">
-            <div class="main-logo">
-                <img src="img/plogo2k15.png" width="100%"/>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/day3.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-3-img">
             </div>
-          </div>
-          <div class="para-detail-container">
-            <div class="num-event">
-                <span>27</span><br>events
-            </div>
-            <div class="event-date">
-                <span>OCT 31</span><br>event date
-            </div>
-            <div class="cash-prize">
-                <span>NOV 3</span><br>event end
-            </div>
-          </div>
-
-        </div>
-
-        <!-- <div name="Team" class="team-container">
-            <div class="black-overlay">
-              <div class="section-title member-detail">Core Team<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
-              <div class="container">
-                <div class="row">
-                  <div class="add">
-                    <div class="three columns"><div class="member-photo"><img src="img/E_Tharunesh.jpeg" alt="President" width="100%" /></div><span class="member-name"><a target="_blank" href="https://instagram.com/_attitude_unlocked_?utm_medium=copy_link">Tharunesh E</a></span><br><span class="member-post">President</span></div>
-                    <div class="three columns"><div class="member-photo"><img src="img/B_Gokul_Prashanth.jpg" alt="Vice President" width="100%"  /></div><span class="member-name"><a target="_blank" href="https://instagram.com/call_me_tharunnn?utm_medium=copy_link">Gokul Prashanth B</a></span><br><span class="member-post">Vice-President</span></div>
-                  </div>
-                  <div class="add">
-                    <div class="three columns"><div class="member-photo"><img src="img/Eswar_Prasad_AD.jpg" alt="Secretary" width="100%" /></div><span class="member-name"><a target="_blank" href="https://instagram.com/eswar_prasaath?utm_medium=copy_link">Eswar Prasaath A D</a></span><br><span class="member-post">Event Co-Ordinator</span></div>
-                    <div class="three columns"><div class="member-photo"><img src="img/Saravanan_N.jpg" alt="Joint Secretary" width="100%"  /></div><span class="member-name"><a target="_blank" href="https://instagram.com/_.eve.s.adam._?utm_medium=copy_link">Saravanan N</a></span><br><span class="member-post">Secretary</span></div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="add">
-                    <div class="three columns"><div class="member-photo"><img src="img/Jegatheesan_S.jpg" alt="Treasurer" width="100%" /></div><span class="member-name"><a target="_blank" href="https://instagram.com/aravinth_3242?utm_medium=copy_link">Jegatheesan S</a></span><br><span class="member-post">Treasurer</span></div>
-                    <div class="three columns"><div class="member-photo"><img src="img/Sabari_Balan_S.jpeg" alt="Joint Treasurer" width="100%" /></div><span class="member-name"><a target="_blank" href="https://instagram.com/s_a_b_a_r_i_v_i_j_a_y_1425?utm_medium=copy_link">Sabari Balan S</a></span><br><span class="member-post">Joint Secretary</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-
-        <div name="Events" class="event-container">
-            <div class="container">
-              <div class="section-title ">Events<p>&diams;&nbsp;&diams;&nbsp;&diams;</p><br></div>
-
-              <div class="row event_row">
-                <div class="three columns event_column event-list-1">
-                    <img src="img/e1.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                </div>
-                <div class="three columns event_column event-list-2">
-                    <img src="img/e2.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                  </div>
-                <div class="three columns event_column event-list-3">
-                    <img src="img/e3.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                  </div>
-                <div class="three columns event_column event-list-4">
-                    <img src="img/e4.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                </div>
-              </div>
-
-              <div class="row event_row">
-
-                <div class="three columns event_column event-list-5">
-                    <img src="img/e5.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                  </div>
-                  <div class="three columns event_column event-list-6">
-                    <img src="img/e6.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                  </div>
-                  <div class="three columns event_column event-list-7">
-                    <img src="img/e7.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                  </div>
-                  <div class="three columns event_column event-list-8">
-                    <img src="img/e8.jpg" width="100%" />
-                    <div class="eventhover"><div class="plus"></div></div>
-                </div>
-
-                </div>
-                <div class="row event_row">
-                    <div class="three columns event_column event-list-9">
-                        <img src="img/e9.jpg" width="100%" />
-                        <div class="eventhover"><div class="plus"></div></div>
-                    </div>
-                    <div class="three columns event_column event-list-10">
-                        <img src="img/e10.jpg" width="100%" />
-                        <div class="eventhover"><div class="plus"></div></div>
-                    </div>
-                    <div class="three columns event_column event-list-11">
-                        <img src="img/e11.jpg" width="100%" />
-                        <div class="eventhover"><div class="plus"></div></div>
-                    </div>
-                    <div class="three columns event_column event-list-12">
-                        <img src="img/e12.jpg" width="100%" />
-                        <div class="eventhover"><div class="plus"></div></div>
-                    </div>
-                </div>
-
-                <div class="row event_row">
-                    <div class="three columns event_column event-list-13">
-                        <img src="img/e13.jpg" width="100%" />
-                        <div class="eventhover"><div class="plus"></div></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    <div name="Event_Slider" class="event-content">
-        <div class=whole-event>
-            <!-- EVENT ONE -->
-            <div class="event event-active event-1">
-
-                <div class="event-image"></div>
-                <div class="instruct">
-                <img class="ins-close" src="img/back-arrow-button.png" />
-
-                <h1>Paper Presentation:</h1>
-                <p>Papers can be presented in any one of the following topics:</p>
-                    <ul>
-                        <li>Hybrid vechicles</li>
-                        <li>Electrical vehicles</li>
-                        <li>BS6 Emission norms</li>
-                    </ul>
-                <ol>
-                    <li>The paper should be preferably in a power-point presentation(no word documents allowed)</li>
-                    <li>The presentation should not exceed 10 slides</li>
-                    <li>The max time limit for presentation is 10 mins with a further extension of about 5 mins for discussion</li>
-                    <li>The paper presentation abstracts should be sent to throttlez2k21@gmail.com.</li>
-                    <li>The decision taken by event co-ordinators is final and binding</li>
-                    <li>The paper must be in .pdf or .doc or .docx formats.</li>
-                    <li>The paper must be sent through mail. The instructions are as follows:
-                    <ol><li>The subject must be the title of the paper.</li>
-                    <li>The body of the mail should include - Name and Institute of participant (starting from the first author and going till the third one), Department and Year, Contact numbers, Email addresses.</li>
-                </ol>
-
-                        <h3>Last date to send in the paper: 20st December 2021</h3>
-                        <!-- <h3>Acceptance notification: 30th A 2021</h3> -->
-
-
-
-            </div>
-                <!-- <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                </div> -->
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> &nbsp;  Paper Presentation </span>
-                    <div class="quotes">                <br />
-                    Unleash your research skills. Put them on paper and get reviews from our highly experienced faculty panel members.
-                    <br />                <br />TIMINGs<br />                   10.30 AM - 11.40 AM  <br />  <br />
-                    </div>
-
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-
-                </div>
-            </div>
-
-            <!-- EVENT ONE ENDS   -->
-
-            <!-- EVENT TWO -->
-            <div class="event event-2">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1>Auto Quiz</h1>
-                    <p>Are you a automobile enthusiast? Do you like connecting the dots? Do you love quizzing ? Or do you want to test how much you know ?</p>
-                    <p>The Throttlez quiz is the place to be. At the end of it you are guaranteed to learn some fascinating new facts. Come prepared to have some fun.</p>
-                    <h3>Rules</h3>
-                    <ul><li> Each team can have a maximum of 2 members</li>
-                        <li> Event consist of 2 rounds - preliminary and final</li>
-                        <li> Preliminary round consist of questions from general and technical automobile sector. </li>
-                        <li> Those who cleared prelims will appear in mains</li>
-                        <li> Final consist various rounds</li>
-                        <li> Any electronics gadgets are strictly prohibited, if any discrepancies are found that team will disqualified from the event.</li>
-                        <li> Event coordinator decision is final and binding.</li>
-                    </ul>
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> &nbsp;  Auto Quiz </span>
-                    <div class="quotes">                <br />
-                    Cheating on a quiz show?<br> That's sort of like plagiarizing a comic strip.
-                    <br />                <br />TIMINGs<br />                11.40 AM - 12.50 PM  <br />   <br />
-                    </div>
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-                </div>
-            </div>
-
-            <!-- EVENT TWO ENDS   -->
-
-            <!-- EVENT THREE -->
-            <div class="event event-3">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-
-                    <h1>Mr. Manufacturer</h1>
-
-                    <br>
-                    <p>Manufacturing is not a skill it's an happiness</p>
-                    <p>Manufacturer leads to change the world with his great processing ideas</p>
-                    <h3>Rules</h3>
-                    <ul>
-                        <li>Each team can have a maximum of 2 members.</li>
-                        <li>Materials will be provided during the event.</li>
-                        <li>Event duration:( respective time)</li>
-                        <li>Event consist of 2 rounds.</li>
-                        <li>First (respective time) will be alloted for answering questionnaire.</li>
-                        <li>These teams who clear the round 1 will go to next round</li>
-                        <li>Next (respective time) for machining the given specimen</li>
-                        <li>The decision of event coordinator is final and binding.</li>
-                    </ul>
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> Mr. Manufacturer </span>
-                    <div class="quotes">                <br />
-                    Manufacturing is not a skill it's an happiness,Manufacturer leads to change the
-world with his great processing ideas
-                    <br />                <br />TIMINGs<br />                10.30 AM - 11.40 AM  <br />  <br />
-                    </div>
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-                </div>
-            </div>
-            <!-- EVENT THREE ENDS   -->
-
-            <!-- EVENT FOUR -->
-            <div class="event event-4">
-            <div class="event-image"></div>
-                <div class="instruct">
-                <img class="ins-close" src="img/back-arrow-button.png" />
-
-                <h1>RC CAR</h1>
-                <p>Radio-Radio-Controlled Cars Use A Common Set Of Components For Their Control
-                    And Operation.<br>All Cars Requirs A Transmitter,Which Has The Joysticks For Control,Or In Pistol
-                    Grip Form, A Trigger For Throttle And A Wheel For Turning And A Receiver Which Sits Inside
-                    The Car.
-                </p>
-                <h3>Rules</h3>
-                    <ul>
-                        <li>Each team can have a maximum of 2 members</li>
-                        <li>Car with or without body can be allowed</li>
-                        <li>Engine type car is not allowed in the event</li>
-                        <li>Maximum width of the track is ()</li>
-                        <li>Time penalty will be added if the car touches the boundary line.</li>
-                        <li>If the car leaves the track then it's disqualified</li>
-                        <li>Battery should not be more than 12V</li>
-                        <li>RPM of the car should not be more than 800</li>
-                        <li>Organizer decision is final and binding.</li>
-                    </ul>
-                </div>
-
-            <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                <div class="desc">
-                <span class="event_title">RC CAR</span>
-                <div class="quotes">                <br />
-                    Radio-Radio-Controlled Cars <br>Use A Common Set Of Components For Their Control And Operation .
-
-                    <br />                <br />TIMINGs<br />                12.50 PM - 1.40 PM  <br />   <br />
-                </div>
-                <div class="button">
-                    <div class="instruction">
-                    <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-            </div>
-            </div>
-            <!-- EVENT FOUR ENDS   -->
-
-            <!-- EVENT FIVE -->
-            <div class="event event-5">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1>Hydro Rocketry</h1>
-                    <p>
-                        The Bottle Is Partly Filled With Water And Sealed.The Bottle Is Then
-                        Pressurized With A Gas ,Usually Air Compressor,Or Cylinder .
-                    </p>
-                    <h3>Rules</h3>
-                    <ul>
-                        <li>The participants are required to design and build a single stage water rocker.</li>
-                        <li>Organiser's decision will be final.</li>
-                        <li>Multi stage water rocket is not allowed in this event.</li>
-                        <li>Only plastic soft drink bottles must be used for the rocket body.</li>
-                        <li>Maximum capacity of bottle is 2 litres.</li>
-                        <li>The water rocket must use only compressed ambient atmospheric air as it's source of energy. Only tap water should be used in the rocket and the water will be provided by the organisers. Water bought by the team won't be allowed in the rockets.</li>
-                        <li>No chemicals or aerated water should be added for launching.</li>
-                        <li>The pressure inside the container(rocket body) before launch should be given by organiser.</li>
-                        <li>No component of the rocket should get detached from the mainframe during the flight of the rocket. If any part gets detached then the team will be disqualified.</li>
-                        <li>Each team can have a maximum of 2 participants.</li>
-                        <li>The range of flight is the distance between the point of launch and the point of it's first impact.</li>
-                    </ul>
-
-                </div>
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> &nbsp; Hydro Rocketry </span>
-                    <div class="quotes">                <br />
-                    The Bottle Is Partly Filled With Water And Sealed.The Bottle Is Then
-Pressurized With A Gas ,Usually Air Compressor,Or Cylinder .
-                    <br />                <br />TIMINGs<br />               12.50 PM - 1.40 PM  <br />   <br />
-                    </div>
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-                </div>
-            </div>
-            <!-- EVENT FIVE ENDS   -->
-
-            <!-- EVENT SIX -->
-            <div class="event event-6">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1> Mr. CAD</h1>
-                    <p>Designers alert! it's your field, register soon and have some fun with this creative event
-                        with your intellectual mind</p>
-                    <h3>RULES</h3>
-                    <ul>
-                        <li>Individuals only allowed</li>
-                        <li>Event consist of two rounds preliminary and system drawing.</li>
-                        <li>Participants who clear preliminary are allowed to take part in the next round</li>
-                        <li>Event duration(respective time).</li>
-                        <li>First( respective time) will be preliminary round.</li>
-                        <li>Remaining (respective time) will be system drawing.</li>
-                        <li>Participants will be provided with question and answer sheet in preliminary round.</li>
-                        <li>System drawing round will include drawing and assembly of machine components</li>
-                        <li>Decision of coordinator is final bad binding.</li>
-                    </ul>
-
-
-
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> Mr. CAD </span>
-                    <div class="quotes">                <br />
-                    Designers alert! it's your field, register soon and have some fun with this creative event with your intellectual mind
-                    <br />                <br />TIMINGs<br />               11.40 AM - 12.50 PM  <br />    <br />
-                    </div>
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-                </div>
-            </div>
-
-            <!-- EVENT SIX ENDS   -->
-
-            <!-- EVENT SEVEN -->
-            <div class="event event-7">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-
-                    <h1>3D Printing Workshop</h1>
-                    <h3>Rules</h3>
-                    <ul>
-                        <li>Entry Fees Rs. 150 (Seperately)</li>
-                        <li>Students are allowed to attend any one among the two workshop</li>
-                        <li>Students are requested to maintain their decorum while attending the session and for any queries please feel free to contact the coordinators and not the administration of DCE campus.</li>
-                        <li>Candidates are requested to be present at the venue at least 10 mins prior to the commencement of the workshop.</li>
-
-                    </ul>
-
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> 3D Printing Workshop</span>
-                    <div class="quotes">                <br />
-                    Come and Learn 3D Printing Technology<br>A Workshop Initiative by Throttlez
-
-                    <br />                <br />TIMINGs<br />                Slot I  :10.00 AM - 12.00 PM <br />    Slot II : 12.00 PM - 2.00 PM <br />
-                    </div>
-
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                </div>
-                </div>
-            </div>
-            <!-- EVENT SEVEN ENDS   -->
-
-            <!-- EVENT 8 STARTS -->
-            <div class="event event-8">
-                <div class="event-image"></div>
-                  <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1>                    Auto-Tronics Workshop</h1>
-                    <p>  An international level workshop on autotronics by Dr.Prabahkar from Wollow University Ethiopia </p>
-                    <br>
-                    <h3>  TOPICS COVERED</h3>
-
-                    <ul>
-
-                        <li> Automobile + Electronics = Auto-Tronics</li>
-                        <li> Sensors in Modern day automobiles</li>
-                    </ul>
-                    <h3>Rules</h3>
-                    <ul>
-                        <li>Entry Fees Rs. 500 (Seperately)</li>
-                        <li>Students are allowed to attend any one among the two workshop.</li>
-                        <li>Students are requested to maintain their decorum while attending the session and for any queries please feel free to contact the coordinators and not the administration of DCE campus.</li>
-                        <li>Candidates are requested to be present at the venue at least 10 mins prior to the commencement of the workshop.</li>
-                    </ul>
-                  </div>
-                  <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                  <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> Auto-Tronics Workshop </span>
-                    <div class="quotes">                <br />
-                        Workshop on Automobile + Electronics<br>
-                        AUTOTRONICS
-
-                      <br />                <br />TIMINGs<br />                10.00 AM - 2.00 PM  <br />   <br />
-                    </div>
-                    <div class="button">
-                        <div class="instruction">
-                          <input class="ins" value="INSTRUCTIONS" type="button" />
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-
-
-                    <div class="contact">
-                        <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                        <div class="head"><span class="head-name">Rishi R<br /> </span><div class="ph">Ph : +91 63831-42138</div></div>
-                    <div class="head"><span class="head-name">Kishore A<br /> </span><div class="ph">Ph : +91 70104-65443</div></div>
-                    </div>
-                </div>
-            </div>
-            <!-- EVENT 8 ENDS   -->
-
-            <!-- EVENT NINE -->
-            <div class="event event-9">
-            <div class="event-image"></div>
-              <div class="instruct">
-                <img class="ins-close" src="img/back-arrow-button.png" />
-                <h1>                    Mobile photography</h1>
-                <p>  Snap Your Way to the Top</p>
-
-                <p>  Are you always looking for reasons to pick up a mobile and take pictures of anything and everything? Well, we’ll give you a reason. </p>
-
-                <p>  Capture captivating photos that capture the light and have a focus on colours to win prizes!</p>
-
-
-                <h3>  RULES</h3>
-
-
-                <ol><li>   Photos should be based on either in the mentioned theme.</li>
-                  <li>   There is no limit for number of entries per contestant.</li>
-                  <li>   Photos with proof of heavy post-processing will be eliminated.</li>
-                  <li>  <ul><li> A winner will be declared for each category based on</li>
-                    <li>  Jury member's decision.</li></ul></li></ol>
-
-              </div>
-              <!-- <img src="img/data1.jpg" class="e_image"> -->
-            <!-- </div> -->
-            <div class="info">
-              <img class="info-close" src="img/x-button.png" />
-                <div class="desc">
-                <span class="event_title"> Mobile Photography </span>
-                <div class="quotes">                <br />
-                  Register here and take your creativity
-                  and admiring Skills together to Capture a perfect shot.
-
-                  <br />                <br />TIMINGs<br />                12.50 PM - 1.40 PM  <br />  <br />
-                </div>
-                <div class="button">
-                    <div class="instruction">
-                      <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                  </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Raja rajan V V<br /> </span><div class="ph">Ph : +91 97916-28811</div></div>
-                        <div class="head"><span class="head-name">Aravind C<br /> </span><div class="ph">Ph : +91 95853-77010</div></div>
-                </div>
-            </div>
-            </div>
-            <!-- EVENT NINE ENDS   -->
-
-            <!-- EVENT TEN -->
-            <div class="event event-10">
-                  <div class="event-image"></div>
-                    <div class="instruct">
-                      <img class="ins-close" src="img/back-arrow-button.png" />
-                        <h1>GAMING ZONE</h1>
-                        <p>You can be a pro or Noob that not matters,Register with your squad to tackle
-                            other teams which takes you for the dinner.</p>
-                        <h3>Rules</h3>
-                        <ol>
-                          <li> Decision taken by the event panel will be final.</li></ol>
-                    </div>
-                    <!-- <img src="img/data1.jpg" class="e_image"> -->
-                  <!-- </div> -->
-                  <div class="info">
-                    <img class="info-close" src="img/x-button.png" />
-                      <div class="desc">
-                      <span class="event_title"> &nbsp; Gaming Zone </span>
-                      <div class="quotes">                <br />
-                        You can be a pro or Noob that not matters,Register with your squad to tackle other teams which takes you for the dinner.
-                        <br />                <br />TIMINGs<br />                10.30 AM - 11.40 AM <br />   <br />
-                      </div>
-                      <div class="button">
-                        <div class="instruction">
-                          <input class="ins" value="INSTRUCTIONS" type="button" />
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-
-
-                    <div class="contact">
-                        <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                        <div class="head"><span class="head-name">Raja rajan V V<br /> </span><div class="ph">Ph : +91 97916-28811</div></div>
-                        <div class="head"><span class="head-name">Aravind C<br /> </span><div class="ph">Ph : +91 95853-77010</div></div>
-                    </div>
-                  </div>
-            </div>
-            <!-- EVENT TEN ENDS   -->
-
-            <!-- EVENT ELEVEN -->
-            <div class="event event-11">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1>CONNEXION</h1>
-                    <p>This is not a technical event. ‘nough said.<br />
-                        <br />So you just wanna have fun? Had enough of tech-talk? <br />
-                        <p>This Amazing Game Is About Movies And General Knowledge You Will Have Lot
-                        Of Fun Watching This You Can Improve Your General Knowledge </p>
-
-
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> &nbsp; CONNEXION </span>
-                    <div class="quotes">                <br />
-                    This Amazing Game Is About Movies And General Knowledge You Will Have Lot Of Fun Watching This You Can Improve Your General Knowledge
-                    <br />                <br />TIMINGs<br />               11.40 AM - 12.50 PM  <br />  <br />
-                    </div>
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Raja rajan V V<br /> </span><div class="ph">Ph : +91 97916-28811</div></div>
-                    <div class="head"><span class="head-name">Aravind C<br /> </span><div class="ph">Ph : +91 95853-77010</div></div>
-                </div>
-                </div>
-            </div>
-            <!-- EVENT 11 ENDS -->
-
-             <!-- EVENT 12 -->
-             <div class="event event-12">
-                <div class="event-image"></div>
-                <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-
-                    <h1>MEME CREATION</h1>
-                    <p>This is not a technical event. ‘nough said.<br />
-                        <br />So you just wanna have fun? <br />
-                        <br />Then MEME CREATION ku vaanga ji, vaanga ji, vaanga ji!<br />
-                        <br />Enjoy panalam :P</p>
-                </div>
-                <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> Meme Creation </span>
-                    <div class="quotes">                <br />
-                    Whatever the problems are Don't worry because memers are here to make you laugh,Register soon to show your MEME skills.
-                    <br />                <br />TIMINGs<br />                12.50 PM - 1.40 PM  <br />   <br />
-                    </div>
-
-
-                    <div class="button">
-                    <div class="instruction">
-                        <input class="ins" value="INSTRUCTIONS" type="button" />
-                    </div>
-                    </div>
-                </div>
-                <br>
-
-
-                <div class="contact">
-                    <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                    <div class="head"><span class="head-name">Raja rajan V V<br /> </span><div class="ph">Ph : +91 97916-28811</div></div>
-                    <div class="head"><span class="head-name">Aravind C<br /> </span><div class="ph">Ph : +91 95853-77010</div></div>
-                </div>
-                </div>
-            </div>
-            <!-- EVENT 12 ENDS   -->
-
-            <!-- EVENT 13 STARTS -->
-            <div class="event event-13">
-                <div class="event-image"></div>
-                  <div class="instruct">
-                    <img class="ins-close" src="img/back-arrow-button.png" />
-                    <h1>                    Mr. OTAKU</h1>
-                    <p>  The word that bring people together globally is ANIME and the quiz that gives the Sportive competition between them is ANIME QUIZ </p>
-                    <h3>  RULES</h3>
-                    <ul>
-                        <li>Each team can have a maximum of 2 members.</li>
-                        <li>Event consist of 2 rounds- preliminary and final</li>
-                        <li>Usage of electronic items during the commencement of the quiz for searching answers is not encouraged</li>
-                        <li>Event coordinator decision is final and binding.</li>
-                        <li>Round 1 - we will be asking questions on any anime topics either on the anime or voice actors or creators.</li>
-                        <li>Round 2 - character identification by the given quote/dialogue.</li>
-                        <li>Round 3 - on spot questions based on the competitors anime choice.</li>
-                    </ul>
-
-                  </div>
-                  <!-- <img src="img/data1.jpg" class="e_image"> -->
-                <!-- </div> -->
-                <div class="info">
-                  <img class="info-close" src="img/x-button.png" />
-                    <div class="desc">
-                    <span class="event_title"> Mr. OTAKU </span>
-                    <div class="quotes">                <br />
-                        Cheating on a quiz show?<br> That's sort of like plagiarizing a comic strip.
-
-                      <br />                <br />TIMINGs<br />                12.50 PM - 1.40 PM  <br />  <br />
-                    </div>
-                    <div class="button">
-                        <div class="instruction">
-                          <input class="ins" value="INSTRUCTIONS" type="button" />
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-
-
-                    <div class="contact">
-                        <div class="head_info"><div class="inf">For more Information: <br /></div></div>
-                        <div class="head"><span class="head-name">Raja rajan V V<br /> </span><div class="ph">Ph : +91 97916-28811</div></div>
-                            <div class="head"><span class="head-name">Aravind C<br /> </span><div class="ph">Ph : +91 95853-77010</div></div>
-                    </div>
-                </div>
-            </div>
-            <!-- EVENT 13 ENDS   -->
-
-
-
-        </div>
-
-
-        <!-- <div class="arrow"> -->
-        <div class="leftarrow">
-            <img src="img/left-arrow.png" width="40px" height="70px" />
-        </div>
-        <div class="rightarrow">
-            <img src="img/right-arrow.png" width="40px" height="70px"/>
-        </div>
-        <!-- </div> -->
-
-        </div>
-
-
-
-
-          <div name="Register" class="register-container">
-            <div class="black-overlay">
-              <div class="section-title member-detail">Register<p>&diams;&nbsp;&diams;&nbsp;&diams;</p></div>
-              <div class="register-info">Registrations will Close Soon <span style="color:#cd2929">Hurry Up !</span><br><br><br><a class="reg-button" href="https://linktr.ee/ayushpragya2k23">Register Now</a><br><br><br></div>
-            </div>
-          </div>
-          <div name="Map" class="ssn-map">
-            <div class="map-line"></div>
-            <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1818341.0666968105!2d79.04051337248406!3d27.11071489705997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e31860dc5fca9%3A0xfdb3c32a3a348984!2sDHANVANTARI%20BHAVAN!5e0!3m2!1sen!2sin!4v1693115144658!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
-            <div class="map-line"></div>
-            <div class="contact-us" id="contact-us">
-              <div style="width:70%;"></div>
-              <div style="background:#cd2929; width:30%; padding: 20px;">
-                <b><span style="font-size: 1.2em">Contact Us:</span></b><br>
-                Vishwajeet Yadav  : +91 8604816549<br>
-               
-                <a style="color: white;text-decoration: none;" href="https://instagram.com/ayushpragya_2k23"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram&nbsp;&nbsp;</a>
-                <a style="color: white;text-decoration: none;" href="mailto:ayushpragya2023@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;ayushpragya2k23</a>
-              </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/day4.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-4-img">
             </div>
 
           </div>
+
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 left-0 text-xl z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-whit" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div name="Event_Slider" class="event-content border-2 mb-10   ">
+    <div class="section-title mt-5">Events<p>&diams;&nbsp;&diams;&nbsp;&diams;</p><br></div>
+
+    <div class=whole-event>
+
+      <div id="indicators-carousel" class="relative w-full h-[80%] " data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="./img/day1.jpg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 border-2 border-rose-900"
+              alt="day-1-img">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./img/day2.jpg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-2-img">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./img/day3.jpg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-3-img">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./img/day4.jpg"
+              class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="day-4-img">
+          </div>
+
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 left-0 text-xl z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-whit" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div name="Register" class="register-container mb-10">
+    <div class="black-overlay">
+      <div class="section-title member-detail">Register<p>&diams;&nbsp;&diams;&nbsp;&diams;</p>
+      </div>
+      <div class="register-info">Registrations will Close Soon <span style="color:#cd2929">Hurry Up
+          !</span><br><br><br><a class="reg-button" href="https://linktr.ee/ayushpragya2k23">Register
+          Now</a><br><br><br></div>
+    </div>
+  </div>
+
+
+  <div name="Map" class="ssn-map">
+    <div class="map-line"></div>
+    <iframe frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3608.287965527729!2d82.9947738647461!3d25.260896682739258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e31803d59fb47%3A0x204879d426b9afc7!2sSwatantrata%20Bhavan%20BHU!5e0!3m2!1sen!2sin!4v1693219321644!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="map-line"></div>
+    <div class="contact-us" id="contact-us">
+      <div style="width:70%;"></div>
+      <div style="background:#cd2929; width:30%; padding: 20px;">
+        <b><span style="font-size: 1.2em">Contact Us:</span></b><br>
+        Vishwajeet Yadav : +91 8604816549<br>
+
+        <a style="color: white;text-decoration: none;" href="https://instagram.com/ayushpragya_2k23"><i
+            class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram&nbsp;&nbsp;</a>
+        <a style="color: white;text-decoration: none;" href="mailto:ayushpragya2023@gmail.com"><i class="fa fa-envelope"
+            aria-hidden="true"></i>&nbsp;&nbsp;ayushpragya2k23</a>
+      </div>
+    </div>
+
+  </div>
 
   <!-- FOOTER -->
-          <footer>
-            <div class="foot">
-              Copyright &copy; <a href="https://instagram.com/ayushpragya_2k23">2k23 Ayushpragya.</a><br />
-              Handcrafted By <a href="http://www.casberry.tech">Casberry Tech Pvt Lt</a></div>
-          </footer>
+  <footer>
+    <div class="foot">
+      Copyright &copy; <a href="https://instagram.com/ayushpragya_2k23">2k23 Ayushpragya.</a><br />
+      Handcrafted By <a href="http://www.casberry.tech">Casberry Tech Pvt Lt</a></div>
+  </footer>
 
   <!-- FOOTER ENDS -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <!--<script src="js/plugins.js"></script>-->
-        <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <!--<script src="js/plugins.js"></script>-->
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -965,5 +374,6 @@ Pressurized With A Gas ,Usually Air Compressor,Or Cylinder .
              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
              ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script> -->
-    </body>
+</body>
+
 </html>
